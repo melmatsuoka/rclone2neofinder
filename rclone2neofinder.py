@@ -20,8 +20,8 @@ import subprocess
 import csv
 
 parser = argparse.ArgumentParser(
-					prog='rclone2neofinder',
-					description='Dumps a recursive listing of an S3 rclone remote to a CSV file, then converts it to a Yoyotta CSV for importing into NeoFinder')
+			prog='rclone2neofinder',
+			description='Dumps a recursive listing of an S3 rclone remote to a CSV file, then converts it to a Yoyotta CSV for importing into NeoFinder')
 parser.add_argument('-r', '--remote', type=str, required=True, help="The name of your rclone remote")
 parser.add_argument('-b', '--bucket', type=str, required=True, help="Name of remote S3 bucket")
 args = parser.parse_args()
