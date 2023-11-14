@@ -11,7 +11,7 @@ This script assumes that you have already configured an rclone remote on your sy
 rclone2neofinder --remote rclone_remote_name --bucket remote_bucket_name
 ```
 
-## Importing info NeoFinder
+## Importing into NeoFinder
 
 The resulting Yoyotta CSV file can then be imported into NeoFinder, via the _File/Import Catalogs…_ menu, then selecting "Yoyotta CSV text file" as the catalog format.
 
