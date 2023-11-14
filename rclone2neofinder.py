@@ -16,8 +16,11 @@ __version__ = "1.0.0"
 
 import os
 import argparse
-import subprocess
+# import subprocess
 import csv
+import rclone_cmds 
+
+
 
 parser = argparse.ArgumentParser(
 			prog='rclone2neofinder',
@@ -35,7 +38,8 @@ new_csv = s3_bucket + '_yoyotta.csv'
 # Dump csv listing of rclone remote
 
 with open (rclone_csv,'w') as fd:
-	subprocess.run(['rclone', 'lsf', '-R', '--csv', '--absolute', '--format', 'ps', '--fast-list', '--exclude', '.DS_Store', rclone_remote + ':/' + s3_bucket], stdout=fd)
+	#subprocess.run(['rclone', 'lsf', '-R', '--csv', '--absolute', '--format', 'ps', '--fast-list', '--exclude', '.DS_Store', rclone_remote + ':/' + s3_bucket], stdout=fd)
+	rclone_cmds.run_cmd(fd, "s3", "melmatsuoka")
   
 # Write column headers to Yoyotta CSV
 
