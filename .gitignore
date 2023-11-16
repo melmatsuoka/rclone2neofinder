@@ -1,9 +1,5 @@
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+rclone2neofinder.code-workspace
 
 # Local History for Visual Studio Code
 .history/
@@ -12,3 +8,6 @@
 *.vsix
 
 .DS_Store
+*.csv
+__pycache__/*
+test.ini
