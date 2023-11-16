@@ -10,7 +10,7 @@ Currently the script only supports Google Drive, Amazon S3 and Dropbox as remote
 ## Usage Notes
 
 ```
-rclone2neofinder -r remote_name -b bucket
+rclone2neofinder -r remote -b bucket
 
 -r/--remote: (required) Rclone remote name (as it appears in your 'rclone config' list).
 -b/--bucket: (optional) Name of remote bucket, if applicable.
