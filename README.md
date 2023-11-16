@@ -5,7 +5,7 @@ This allows you to store offline indexes of your rclone remotes in a searchable 
 
 This script assumes that you have already configured an rclone remote on your system.
 
-Currently the script only supports Google Drive, Amazon S3 and Dropbox as remotes. But you can add your own remotes in the `rclone_cmds.py`` file, modifying the rclone commands where appropriate.
+Currently the script only supports Google Drive, Amazon S3 and Dropbox as remotes. But you can add your own remotes in the `rclone_cmds.py` file, modifying the rclone commands where appropriate.
 
 ## Usage Notes
 
@@ -17,7 +17,7 @@ rclone2neofinder -r remote_name -b bucket
 ```
 If your remote doesn't reference any buckets, the rclone remote name will be used as the Volume/catalog name that appears when you import the converted CSV into NeoFinder. Otherwise, the bucket name will be used as the Volume name.
 
-A caveat to using rclone to retrieve remote directory listings is that some cloud storage providers don't support the "--fast-list" (ListR) feature, which can cause file listings to seemingly take _forever_ if you're indexing a remote that has a lot of files in it (e.g. Dropbox). 
+A caveat to using rclone to retrieve remote directory listings is that some cloud storage providers don't support the `--fast-list` (ListR) feature, which can cause file listings to seemingly take _forever_ if you're indexing a remote that has a lot of files in it (e.g. Dropbox). 
 
 Please reference rclone's [list of supported cloud providers](https://rclone.org/overview/#optional-features) to check if your provider supports `--fast-list` (ListR).
 
