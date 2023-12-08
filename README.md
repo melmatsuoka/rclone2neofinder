@@ -17,9 +17,9 @@ rclone2neofinder -r remote -b bucket
 ```
 If your remote doesn't reference any buckets, the rclone remote name will be used as the Volume/catalog name that appears when you import the converted CSV into NeoFinder. Otherwise, the bucket name will be used as the Volume name.
 
-A caveat to using rclone to retrieve remote directory listings is that some cloud storage providers don't support the `--fast-list` (ListR) feature, which can cause file listings to seemingly take _forever_ if you're indexing a remote that has a lot of files in it (e.g. Dropbox). 
+A caveat to using rclone to retrieve remote directory listings is that some cloud storage providers don't support the [`--fast-list`](https://rclone.org/docs/#fast-list) (ListR) feature, which can cause file listings to seemingly take _forever_ if you're indexing a remote that has a lot of files in it (e.g. Dropbox). 
 
-Please reference rclone's [list of supported cloud providers](https://rclone.org/overview/#optional-features) to check if your provider supports `--fast-list` (ListR).
+Please reference rclone's [list of supported cloud providers](https://rclone.org/overview/#optional-features) to check if your provider supports [`--fast-list`](https://rclone.org/docs/#fast-list) (ListR).
 
 ## Importing into NeoFinder
 
