@@ -30,7 +30,8 @@ The resulting Yoyotta CSV file can then be imported into NeoFinder, via the _Fil
 
 The CSV will be imported into NeoFinder using the name of the bucket (or remote) as the catalog name. From there, you can move it into a NeoFinder folder, if desired.
 
-![neofinder3](https://github.com/melmatsuoka/rclone2neofinder/assets/3419536/8f57a6ab-3a3c-4278-aee9-61f0d2e818a2)
+![neofinder-bucketlist](https://github.com/melmatsuoka/rclone2neofinder/assets/3419536/a3cf281b-6495-403a-b08f-d5830d25edb7)
+
 
 
 
